@@ -1,0 +1,16 @@
+<p>{{'ejemplo de pipes '| titlecase | slice:0:7| pipepersonal:'**'}}</p>
+
+<p>{{fecha| date:'short'}}</p>
+
+
+<p>{{fecha| date:'dd-MM-yyyy'}}</p>
+
+<p>{{numero|number:'1.0-2'}}</p>
+
+<p>{{numero|currency:'USD':true:'1.0-2'}}</p>
+
+<p>{{mensajes.length|i18nPlural:mensajeMapping}}</p>
+
+<p>{{usuario.sexo|i18nSelect:map}} {{usuario.apellidos}}</p>
+
+<p>{{usuario|json}}</p>
