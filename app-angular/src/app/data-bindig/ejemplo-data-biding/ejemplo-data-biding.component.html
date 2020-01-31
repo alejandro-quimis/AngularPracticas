@@ -1,0 +1,6 @@
+<p>ejemplo-data-biding works!</p>
+
+<input type="text" [(ngModel)]="mensaje" )]>{{mensaje}}
+<app-child-data-binding (mensaje_hijo)="mensaje_hijo($event)" [mensaje_padre]="'yo soy tu padre'"></app-child-data-binding>
+
+<p>mensaje del hijo :{{mensaje_recibido_hijo}}</p>
