@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-angular';
+  show: boolean;
+  color: string[];
+
+  ngOnInit(): void {
+      this.show = true;
+      this.color = ['red','green','blue','yellow'];
+  }
 }
